@@ -18,3 +18,26 @@ To deploy the CredentialNFT contract to the Goerli testnet, you will need to hav
 
 4. Deploy the contract to the Goerli testnet:\
 - npx hardhat run scripts/deploy.js --network goerli
+
+Testing
+
+The CredentialNFT project comes with a set of test cases that can be run using Hardhat.
+
+Ensure that you have an IPFS daemon running locally on your computer. You can download and install IPFS from the official website: https://docs.ipfs.io/install/
+
+Start the IPFS daemon by running the following command:
+- ipfs daemon
+
+Run the test cases:
+- npx hardhat test
+
+Interacting with the contract -
+
+You can interact with the CredentialNFT contract using the Hardhat console or by writing custom scripts that use the contract's ABI. To open the Hardhat console, run the following command:
+
+-npx hardhat console --network goerli
+
+This will open the Hardhat console with the CredentialNFT contract instance available as the contract variable. You can use this variable to interact with the contract, for example:
+
+- const credential = await contract.mintCredentialNFT("Pringles", "Bachelor's Degree in Computer Science", "2023-04-19", "https://gateway.ipfs.io/ipfs/Qm...")
+This will mint a new NFT for Pringles's Bachelor's Degree in Computer Science with a date of April 19th, 2023 and the IPFS hash of the NFT metadata.
