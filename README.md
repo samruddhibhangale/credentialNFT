@@ -35,7 +35,7 @@ Interacting with the contract -
 
 You can interact with the CredentialNFT contract using the Hardhat console or by writing custom scripts that use the contract's ABI. To open the Hardhat console, run the following command:
 
--npx hardhat console --network goerli
+- npx hardhat console --network goerli
 
 This will open the Hardhat console with the CredentialNFT contract instance available as the contract variable. You can use this variable to interact with the contract, for example:
 
