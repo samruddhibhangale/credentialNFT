@@ -41,3 +41,12 @@ This will open the Hardhat console with the CredentialNFT contract instance avai
 
 - const credential = await contract.mintCredentialNFT("Pringles", "Bachelor's Degree in Computer Science", "2023-04-19", "https://gateway.ipfs.io/ipfs/Qm...")
 This will mint a new NFT for Pringles's Bachelor's Degree in Computer Science with a date of April 19th, 2023 and the IPFS hash of the NFT metadata.
+
+
+Assumptions-
+- The contract is based on the ERC721 standard, which allows for the creation of non-fungible tokens (NFTs) that represent unique assets.
+- The NFTs created by this contract represent credentials and include metadata stored on IPFS.
+- The metadata includes information about the issuer, recipient, and the type of credential, as well as a hash of the actual credential data stored off-chain.
+- The contract includes functions for minting new NFTs and retrieving their metadata.
+- The metadata is stored on IPFS, which requires the use of an IPFS client library and a running IPFS node.
+
